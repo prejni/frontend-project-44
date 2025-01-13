@@ -19,7 +19,7 @@ export default function game(gameName) {
   };
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello,  ${name}!`);
+  console.log(`Hello, ${name}!`);
   console.log(games[gameName].rule);
   for (let i = 0; i < maxIter; i += 1) {
     [qst, res] = games[gameName].fnc();
